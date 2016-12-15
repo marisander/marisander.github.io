@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kõik koertest</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript" src="js\jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js\bootstrap-3.3.7-dist\js\bootstrap.js"></script>
+	<link href="js\bootstrap-3.3.7-dist\css\bootstrap.css" rel="stylesheet">
+	<link href="css\main.css" rel="stylesheet">
+	<link href="css\simple-sidebar.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+		<a class="navbar-brand" href="index.html">Kõik koertest</a>
+		<ul class="nav navbar-nav pull-right">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Soovid koera? <span class="caret"></span></a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="varjupaik.html">Varjupaik</a></li>
+					<li><a href="kennelliit.html">Kennelliit</a></li>
+					<li><a href="muu.html">Muu</a></li>
+				</ul>
+			</li>            
+			<li class="nav-item">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Koeraomaniku ABC <span class="caret"></span></a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					<li><a href="#">Dresseerimine</a></li>				
+					<li><a href="#">Hooldus</a></li>
+					<li><a href="#">Kiibistamine</a></li>
+					<li><a href="#">Pass</a></li>
+					<li><a href="#">Seadusandlus</a></li>
+					<li><a href="toitumine.html">Toitumine</a></li>
+					<li><a href="#">Tõud</a></li>
+					<li><a href="#">Vaktsineerimine</a></li>
+					<li><a href="#">Veterinaarid</a></li>										
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Meist</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">KKK</a>
+			</li>
+			<li>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div>
+						<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control search-length" placeholder="Otsi otsi" name="q">
+								<div class="input-group-btn">
+						    		<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>	
+				</div>			
+			</li>
+		</ul>
+    </nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+					<h2>Eesti varjupaikades leiduvad koerad</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3"></div>				
+					<div class="col-md-3">
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+							<a class="nav-link dropdown-toggle filtering" href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Vali sugu <span class="caret"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="varjupaik.html">Isane</a></li>
+									<li><a href="kennelliit.html">Emane</a></li>
+									<li><a href="kennelliit.html">Kõik</a></li>
+								</ul>
+							</li> 
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+							<a class="nav-link filtering" href="#">Järjesta vanus <span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span></a>
+							</li> 
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+							<a class="nav-link filtering" href="#">Järjesta asukohad <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span></a>
+							</li> 
+						</ul>				
+					</div>
+				</div>				
+				<hr>
+				<p></p>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\1.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Isane</div>
+					<div class="col-md-3">1,5 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\2.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Emane</div>
+					<div class="col-md-3">2 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\3.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Emane</div>
+					<div class="col-md-3">1,5 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\4.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Emane</div>
+					<div class="col-md-3">11 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\5.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Isane</div>
+					<div class="col-md-3">0,3 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-3">
+						<img class="media-object img-rounded" src="img\varjupaigas\6.jpg" alt="" height="80">
+						<p></p>
+						<button type="button" class="btn btn-success btn-xs">
+							Vaata rohkem <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						</button>
+					</div>
+					<div class="col-md-3">Emane</div>
+					<div class="col-md-3">9 aastat</div>
+					<div class="col-md-3"><p>Tartu koduta loomade varjupaik<p><a href="" data-toggle="modal" data-target="#myModal">Vaata kaardilt</a></div>
+				</div>
+				<hr>				
+				<p></p>
+			</div>
+			<div class="col-md-2">
+				<div id="wrapper">
+					<!-- Sidebar -->
+					<div id="sidebar-wrapper">
+						<ul class="nav sidebar-nav text-center">
+							<li class="nav-item"><a href="varjupaik.html">Varjupaik</a></li>
+							<li class="nav-item"><a href="kennelliit.html">Kennelliit</a></li>
+							<li class="nav-item"><a href="muu.html">Muu</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+		<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Asukoht</h4>
+				</div>
+				<div class="modal-body">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.1736252283363!2d26.744100215912532!3d58.3904723813402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36c0e21d5a79%3A0x3f644e8de0dd4eb5!2sTartu+Loomade+Varjupaik!5e0!3m2!1set!2sus!4v1481748893663" width="568" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Sulge</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Creates the bootstrap modal where the image will appear -->
+	<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+	      </div>
+	      <div class="modal-body">
+	        <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted footer-text">©Kõik koertest 2016</p>
+		</div>
+	</footer>    
+</body>
+</html>
+
+<!-- Vaja luua: avaleht, info lehe yldvisand, soovid koera -> varjupaik  -->
